@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="451.0" minWidth="600.0" prefHeight="475.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.MainController">
+  <children>
+    <VBox prefHeight="475.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <MenuBar VBox.vgrow="NEVER">
+          <menus>
+            <Menu mnemonicParsing="false" text="Файл">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Закрыть" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Редактировать">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Удалить" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Помощь">
+              <items>
+                <MenuItem mnemonicParsing="false" text="О приложении" />
+              </items>
+            </Menu>
+          </menus>
+          <VBox.margin>
+            <Insets />
+          </VBox.margin>
+        </MenuBar>
+        <TabPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="451.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" VBox.vgrow="ALWAYS">
+          <tabs>
+            <Tab closable="false" text="Субьекты">
+              <content>
+                <AnchorPane id="Content" maxHeight="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="415.0" prefWidth="600.0">
+                  <children>
+                    <VBox prefHeight="379.0" prefWidth="600.0" AnchorPane.bottomAnchor="18.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="18.0">
+                      <children>
+                        <Pane prefHeight="368.0" prefWidth="431.0" style="&#10;" VBox.vgrow="ALWAYS" />
+                        <HBox alignment="CENTER_RIGHT" disable="false" fillHeight="true" focusTraversable="false" maxWidth="1.7976931348623157E308" minHeight="49.0" prefHeight="49.0" prefWidth="600.0" snapToPixel="true" spacing="0.0" style="-fx-background-color:&#10;linear-gradient(#B6EBFC, #5A7B85);" VBox.vgrow="NEVER">
+                          <children>
+                            <Button mnemonicParsing="false" text="Добавить">
+                              <HBox.margin>
+                                <Insets left="10.0" right="10.0" fx:id="x1" />
+                              </HBox.margin>
+                            </Button>
+                            <Button mnemonicParsing="false" text="Редактировать" HBox.margin="$x1" />
+                            <Button mnemonicParsing="false" text="Удалить" HBox.margin="$x1" />
+                          </children>
+                          <VBox.margin>
+                            <Insets />
+                          </VBox.margin>
+                        </HBox>
+                      </children>
+                    </VBox>
+                  </children>
+                </AnchorPane>
+              </content>
+            </Tab>
+            <Tab closable="false" text="Документы субьектов">
+              <content>
+                <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <children>
+                    <SplitPane disable="false" dividerPositions="0.2993311036789298" focusTraversable="true" prefHeight="415.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                      <items>
+                        <AnchorPane maxWidth="600.0" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                          <children>
+                            <ListView id="" fx:id="documentTypesListView" prefHeight="413.0" prefWidth="177.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                          </children>
+                        </AnchorPane>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+                      </items>
+                    </SplitPane>
+                  </children>
+                </AnchorPane>
+              </content>
+            </Tab>
+            <Tab closable="false" text="Контракты">
+              <content>
+                <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+            <Tab text="Платежи">
+              <content>
+                <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+          </tabs>
+        </TabPane>
+      </children>
+    </VBox>
+  </children>
+</AnchorPane>
